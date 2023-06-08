@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="my-form">
+
+    <ul class="my-tab-group">
+      <li class="my-tab active"><a href="#my-signup">Sign Up</a></li>
+      <li class="my-tab"><a href="#my-login">Log In</a></li>
+    </ul>
+
+    <div class="my-tab-content">
+      <div id="my-signup">
+        <h1>Create your account</h1>
+
+        <form action="/" method="post">
+
+          <div class="top-row">
+            <div class="my-field-wrap">
+              <label class="my-fname">
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+
+            <div class="my-field-wrap">
+              <label class="my-lname">
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="my-field-wrap">
+            <label>
+              Phone Number<span class="req">*</span>
+            </label>
+            <input type="tel" required autocomplete="off" />
+          </div>
+
+          <div class="my-field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+
+          <div class="my-field-wrap">
+            <label>
+              Create a Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+
+          <div class="my-field-wrap">
+            <label>
+              Confirm Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+
+          <button type="submit" class="my-button my-button-block" >Create account</button>
+
+        </form>
+
+      </div>
+
+      <div id="my-login">
+        <h1>Welcome Back!</h1>
+        <form action="/" method="post">
+
+          <div class="my-field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" />
+          </div>
+
+          <div class="my-field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" />
+          </div>
+
+          <p class="my-forgot"><a href="#">Forgot Password?</a></p>
+
+          <button class="my-button my-button-block">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

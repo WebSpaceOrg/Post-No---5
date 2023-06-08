@@ -1,0 +1,217 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #000;
+  font-family: sans-seri;
+}
+
+a {
+  text-decoration: none;
+  color: #BBDEFB;
+  transition: .5s ease;
+}
+
+a:hover {
+  color: #90CAF9;
+}
+
+input,
+textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: none;
+  border-bottom: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  border: 1px solid #90CAF9;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #90CAF9;
+  border-radius: 15px;
+  box-shadow: 0 0 25px #90CAF9;
+}
+
+.my-form {
+  background: rgb(10, 29, 40);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 2px lightblue;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px #90CAF9;
+  border: 2px solid #90CAF9;
+}
+
+.my-form:before,
+.my-form:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+.my-form:after {
+  mix-blend-mode: multiply;
+}
+
+.my-tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.my-tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.my-tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.my-tab-group li a:hover {
+  background: #90CAF9;
+  color: #ffffff;
+}
+
+.my-tab-group .active a {
+  background: #BBDEFB;
+  color: black;
+  font-weight: 600;
+}
+
+.my-tab-content>div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 30px #e9eaea;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  --webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+
+label .req {
+  margin: 2px;
+  color: #BBDEFB;
+}
+
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.my-field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.top-row>div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.top-row>div:last-child {
+  margin: 0;
+}
+
+.my-button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #BBDEFB;
+  color: #000;
+  transition: all 0.5s ease;
+  --webkit-appearance: none;
+  position: relative;
+  z-index: 1;
+}
+
+.my-button:hover,
+.my-button:focus {
+  background: #90CAF9;
+}
+
+.my-button-block {
+  display: block;
+  width: 100%;
+}
+
+.my-forgot {
+  margin-top: -20px;
+  text-align: right;
+}
